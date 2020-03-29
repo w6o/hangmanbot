@@ -363,4 +363,4 @@ client.on('ready', () => {
 
 client.on('error', (err) => console.error(err));
 
-client.login(config.token).then((token) => console.log("Logged in successfully as " + client.user.tag)).catch(console.error);
+client.login(process.env.token).then((token) => console.log("Logged in successfully as " + client.user.tag)).catch(console.error);
